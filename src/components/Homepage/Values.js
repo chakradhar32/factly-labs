@@ -36,7 +36,13 @@ const Values = () => {
     },
   ]
   return (
-    <section sx={{ maxWidth: '1126px', mx: 'auto', my: '80px' }}>
+    <section sx={{
+      maxWidth: '1126px', mx: 'auto',
+      mb: ['40px', null, null, '0px'],
+      mt: ['20px', null, null, '0px'],
+      px: '24px'
+
+    }}>
       {/* <SectionHeader title="Our values"
         description='Connect your tools, connect your teams. With over 100 apps already available in our directory, your team’s favourite tools are just a click away.' /> */}
       <div sx={{ maxWidth: '768px', mx: 'auto', mb: '80px', }}>
@@ -61,7 +67,7 @@ const Values = () => {
 
       <div sx={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(535px, 1fr))',
+        gridTemplateColumns: ['repeat(auto-fit, minmax(320px, 1fr))', null, 'repeat(auto-fit, minmax(510px, 1fr))'],
         gridGap: '56px',
       }}>
         {values.map((value) => (

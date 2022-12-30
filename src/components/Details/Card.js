@@ -26,7 +26,6 @@ const Card = ({ data }) => {
             }}>{name}</h1>
             <h4 sx={{
               fontWeight: '400',
-              fontSize: '20px',
               color: '#6C6C6C',
               my: '16px'
             }}>{position}</h4>

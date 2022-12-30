@@ -2,7 +2,7 @@
 import React from 'react'
 import { jsx } from 'theme-ui'
 import Product from './Product.js'
-import browseArrow from '../../../static/assets/icons/browse-arrow.svg'
+import rightArrow from '../../../static/assets/icons/right-arrow.svg'
 
 
 const Products = () => {
@@ -60,7 +60,7 @@ const Products = () => {
   return (
     <section sx={{ p: '2rem' }}>
       <div sx={{
-        my: '80px',
+        my: ['20px', null, '80px'],
         '.product-card:nth-child(even)': {
           backgroundColor: '#F9F9F9',
           '.image-container': {
@@ -71,6 +71,17 @@ const Products = () => {
         {products.map((product) => (
           <Product data={{ ...product }} />
         ))}
+      </div>
+      <div sx={{ display: 'flex', justifyContent: 'center' }}>
+        <button sx={{
+          display: 'flex', alignItems: 'center', bg: '#3E3667', fontFamily: 'Inter',
+          fontWeight: '600',
+          fontSize: '18px',
+          color: '#FFFFFF', px: '32px', py: '12px', gap: '10px'
+        }}>
+          Browse all Products
+          <img src={rightArrow} alt="" />
+        </button>
       </div>
     </section>
   )

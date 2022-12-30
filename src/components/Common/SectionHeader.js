@@ -5,7 +5,13 @@ import { jsx } from 'theme-ui'
 const SectionHeader = ({ title, description }) => {
   return (
     <>
-      <div sx={{ maxWidth: '768px', mx: 'auto', py: '82px', bg: '#3E3667' }}>
+      <div sx={{
+        maxWidth: '768px',
+        mx: 'auto',
+        py: ['60px', null, '82px'],
+        px: ['28px', null, '0px'],
+        bg: '#3E3667'
+      }}>
         <h1 sx={{
           fontFamily: 'Montserrat',
           fontWeight: '600',

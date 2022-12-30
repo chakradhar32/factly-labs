@@ -6,17 +6,24 @@ import { jsx } from 'theme-ui'
 const Header = () => {
   return (
     <section sx={{
-      backgroundImage: ``,
-      padding: '100px'
+      py: ['60px', null, '100px'], px: ['32px', null, '0px']
     }}>
       <div sx={{
+        backgroundImage: [`url('/assets/images/header-bg.png')`, null, 'none'],
+        backgroundRepeat: 'no-repeat',
         maxWidth: '1190px',
         mx: 'auto',
         display: 'flex',
         alignItems: 'center',
         gap: '24px'
       }}>
-        <div sx={{ maxWidth: 'calc(50% - 12px)', flex: '1 0 calc(50% - 12px)', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div sx={{
+          maxWidth: ['1 0 100%', null, '1 0 calc(50% - 12px)'],
+          flex: ['1 0 100%', null, '1 0 calc(50% - 12px)'],
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '20px'
+        }}>
           <h1 sx={{
             fontFamily: 'poppins',
             fontWeight: '500',
@@ -47,7 +54,11 @@ const Header = () => {
             Learn more
           </Link>
         </div>
-        <div sx={{ maxWidth: 'calc(50% - 12px)', flex: '1 0 calc(50% - 12px)', mx: 'auto' }}>
+        <div sx={{
+          display: ['none', null, 'block'],
+          maxWidth: 'calc(50% - 12px)',
+          flex: '1 0 calc(50% - 12px)', mx: 'auto'
+        }}>
           <img src="/assets/images/header.png" alt="" />
         </div>
       </div>

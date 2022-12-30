@@ -79,11 +79,11 @@ const Products = () => {
         }}>Connect your tools, connect your teams. With over 100 apps already available in our directory, your team’s favourite tools are just a click away.</p>
       </div>
       <div sx={{
-        mb: '80px',
+        mb: ['40px', null, '80px'],
         '.product-card:nth-child(even)': {
           backgroundColor: '#F9F9F9',
           '.image-container': {
-            order: 2
+            order: [0, null, null, 2]
           }
         }
       }}>

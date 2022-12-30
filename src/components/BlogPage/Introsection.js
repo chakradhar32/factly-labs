@@ -9,18 +9,19 @@ const IntroSection = ({ posts }) => {
     <div sx={{
       maxWidth: '1190px',
       mx: 'auto',
-      my: '42px'
+      my: '42px',
+      px: '24px',
     }}>
       <h2 sx={{
         fontFamily: 'Montserrat',
         fontSize: '36px',
-        color: '#CE212B',
+        color: '#3E3667',
         fontWeight: '600',
         mb: '32px'
-      }}>Recents</h2>
+      }}>Recentss</h2>
       <div sx={{
         display: 'grid',
-        gridTemplateColumns: '3fr 2fr',
+        gridTemplateColumns: ['1fr', null, '3fr 2fr'],
         gridGap: '62px'
       }}>
         <div>

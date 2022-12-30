@@ -14,13 +14,15 @@ const Post = ({ data }) => {
         maxWidth: '1100px',
         mx: 'auto',
         display: 'flex',
+        flexWrap: 'wrap',
         alignItems: 'center',
         gap: '24px',
-        mt: '5rem'
+        mt: ['3rem', null, '5rem'],
+        px: ['24px', null, '0px']
       }}>
         <div sx={{
-          maxWidth: 'calc(50% - 32px)',
-          flex: '1 0 calc(50% - 32px)',
+          maxWidth: ['1 0 100%', null, 'calc(50% - 32px)'],
+          flex: ['1 0 100%', null, 'calc(50% - 32px)'],
           display: 'flex',
           flexDirection: 'column',
           gap: '20px'
@@ -35,7 +37,7 @@ const Post = ({ data }) => {
           <p sx={{
             fontFamily: 'Inter',
             fontWeight: '400',
-            fontSize: '20px',
+            variant: 'text.normal',
             color: '#667085',
             lineHeight: '30px'
           }}>{data.excerpt}</p>
@@ -47,7 +49,9 @@ const Post = ({ data }) => {
             overflow: 'hidden',
             // height: '100%',
             objectFit: 'cover',
-            width: '100%',
+            //width: '100%',
+            maxWidth: ['1 0 100%', null, 'calc(50% - 32px)'],
+            flex: ['1 0 100%', null, 'calc(50% - 32px)'],
           }}
         >
           <div aria-hidden="true" sx={{ width: '100%', pb: '56.25%' }} className="lazy"></div>

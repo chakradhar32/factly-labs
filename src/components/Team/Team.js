@@ -10,8 +10,8 @@ const Team = ({ data }) => {
     <div>
       <div sx={{ display: 'flex' }}>
         <div sx={{ display: 'flex', flexDirection: 'column' }}>
-          <div>
-            <img src={image} alt="" />
+          <div >
+            <img sx={{ width: '100%' }} src={image} alt="" />
           </div>
           <div>
             <div sx={{
