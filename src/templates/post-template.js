@@ -4,8 +4,8 @@ import Post from '../components/Post';
 import Layout from '../components/Layout';
 
 const PostPage = ({ data }) => {
-  const { posts, Post } = data;
-  const currentPost = posts.edges.filter(({ node }) => node.id === Post.id)[0];
+  const { posts, post } = data;
+  const currentPost = posts.edges.filter(({ node }) => node.id === post.id)[0];
   const { previous: previousPost, next: nextPost } = currentPost;
   return (
     <Layout>
