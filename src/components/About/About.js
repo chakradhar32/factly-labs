@@ -8,7 +8,13 @@ const About = () => {
     <section sx={{
     }}>
       <div sx={{
-        maxWidth: '1180px', mx: 'auto', py: '100px', display: 'flex', flexDirection: 'column', gap: '80px', p: {
+        maxWidth: '1180px',
+        mx: 'auto',
+        py: ['40px', null, '100px'],
+        display: 'flex',
+        flexDirection: 'column',
+        gap: ['40px', null, '80px',],
+        p: {
           fontFamily: 'Inter',
           fontWeight: '400',
           fontSize: '20px',
@@ -16,6 +22,7 @@ const About = () => {
         }
       }}>
         <div sx={{
+          px: ['32px', null, '0px'],
           textAlign: 'center',
         }}>
           <h1 sx={{
@@ -30,16 +37,19 @@ const About = () => {
         </div>
         <div sx={{
           display: 'flex',
+          flexWrap: 'wrap',
           justifyContent: 'space-evenly',
           gap: '32px',
           h1: { fontSize: '24px', fontWeight: '600', fontFamily: 'Montserrat', },
           p: { fontFamily: 'Inter', fontWeight: '400', fontSize: '16px' }
         }}>
           <div sx={{
-            maxWidth: 'calc(65% - 16px)',
-            flex: '1 0 calc(65% - 16px)',
+            maxWidth: ['1 0 100%', null, '1 0 calc(65% - 16px)'],
+            flex: ['1 0 100%', null, '1 0 calc(65% - 16px)'],
             display: 'flex',
             flexDirection: 'column',
+            px: ['32px', null, '0px'],
+            order: [1, null, 0],
             gap: '48px',
             alignItems: 'center',
             justifyContent: 'center',
@@ -67,7 +77,12 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            maxWidth: ['1 0 100%', null, '1 0 calc(35% - 16px)'],
+            flex: ['1 0 100%', null, '1 0 calc(35% - 16px)'],
+          }}>
             <img src="/assets/images/factly-img.png" alt="" />
           </div>
         </div>

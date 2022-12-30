@@ -26,6 +26,7 @@ const ContactForm = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'center',
           gap: '24px',
           flex: '1 0 50%',
           maxWidth: '50%',
@@ -38,17 +39,18 @@ const ContactForm = () => {
           }
         }}
       >
-        <div>
-          <p
-            sx={{
-              fontFamily: 'Montserrat',
-              fontWeight: '600',
-              fontSize: '30px',
-              lineHeight: '44px',
-              color: '#CE212B'
-            }}
-          >
-            We are here to help you
+        <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <h2 sx={{
+            fontFamily: 'Montserrat',
+            fontWeight: '600',
+            fontSize: '30px',
+            lineHeight: '44px',
+            color: '#3E3667'
+          }}>
+            Get in Touch
+          </h2>
+          <p>
+            We’d love to hear from you. Let’s fill out this form.
           </p>
         </div>
         <div sx={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
@@ -128,11 +130,10 @@ const ContactForm = () => {
 
 
 
-      <div sx={{}}>
+      <div>
         <form sx={{
-          maxWidth: '50%', flex: '1 0 50%',
-          bg: '#F6F6F6', px: '68px',
-          py: '48px', width: '100%', maxWidth: '550px', boxShadow: '5px 32px 25px rgba(104, 134, 119, 0.23)'
+          maxWidth: '50%', flex: '1 0 50%', px: '68px',
+          py: '48px', width: '100%', maxWidth: '550px'
         }} action={''} method="POST">
           <div sx={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
             <div
@@ -162,7 +163,7 @@ const ContactForm = () => {
                 <input id="message" type="text" name="message" />
               </label>
               <button sx={{
-                bg: '#CE212B',
+                bg: '#3E3667',
                 color: '#E6E3D9',
                 border: 'none',
                 borderRadius: '4px',
