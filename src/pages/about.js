@@ -6,7 +6,7 @@ import Header from '../components/Common/Header';
 import About from '../components/About/About';
 import Form from '../components/Common/Form';
 import WhatWeDo from '../components/About/WhatWeDo';
-import Data from '../components/About/data';
+import Data from '../components/About/Data';
 
 const AboutPage = () => {
   return (

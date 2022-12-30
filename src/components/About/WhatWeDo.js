@@ -2,7 +2,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { jsx } from 'theme-ui'
-import arrowRight from '../../../static/assets/icons/icon.svg'
 import SectionHeader from '../Common/SectionHeader'
 
 const WhatWeDo = () => {
@@ -57,7 +56,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src="/assets/icons/icon.svg" alt="" />
               </div>
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'center', alignItems: 'center' }}>
@@ -72,7 +71,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src={"/assets/icons/icon.svg"} alt="" />
               </div>
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'center', alignItems: 'center' }}>
@@ -87,7 +86,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src={"/assets/icons/icon.svg"} alt="" />
               </div>
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'center', alignItems: 'center' }}>
@@ -102,7 +101,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src="/assets/icons/icon.svg" alt="" />
               </div>
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'center', alignItems: 'center' }}>
@@ -117,7 +116,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src={"/assets/icons/icon.svg"} alt="" />
               </div>
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'center', alignItems: 'center' }}>
@@ -132,7 +131,7 @@ const WhatWeDo = () => {
               <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Pellentesque in tellus, lacus massa vels aliquet lacinia.</p>
               <div sx={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Link to='#'>Learn more</Link>
-                <img src={arrowRight} alt="" />
+                <img src={"/assets/icons/icon.svg"} alt="" />
               </div>
             </div>
           </div>
