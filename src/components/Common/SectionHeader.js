@@ -15,7 +15,7 @@ const SectionHeader = ({ title, description }) => {
         <h1 sx={{
           fontFamily: 'Montserrat',
           fontWeight: '600',
-          fontSize: '36px',
+          fontSize: ['32px', null, '36px'],
           lineHeight: '44px',
           textAlign: 'center',
           color: '#FFFFFF',
@@ -24,7 +24,7 @@ const SectionHeader = ({ title, description }) => {
         <p sx={{
           fontFamily: 'Inter',
           fontWeight: '400',
-          fontSize: '20px',
+          fontSize: ['16px', null, '20px'],
           textAlign: 'center',
           color: '#F1F1F1'
         }}>{description}</p>
