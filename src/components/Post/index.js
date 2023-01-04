@@ -4,6 +4,7 @@ import React from 'react'
 import { jsx } from 'theme-ui'
 import { isBrowser } from '../../helpers/isBrowser';
 import parseTiptapContent from '../../helpers/parseTiptapContent';
+import Form from '../Common/Form';
 
 const Post = ({ data }) => {
   const src = data?.medium?.url?.proxy;
@@ -142,7 +143,7 @@ const Post = ({ data }) => {
       >
         {isBrowser && parseTiptapContent(data.description_html)}
       </div>
-
+      <Form />
     </section>
   )
 }

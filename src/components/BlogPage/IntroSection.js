@@ -18,7 +18,7 @@ const IntroSection = ({ posts }) => {
         color: '#3E3667',
         fontWeight: '600',
         mb: '32px'
-      }}>Recentss</h2>
+      }}>Recents</h2>
       <div sx={{
         display: 'grid',
         gridTemplateColumns: ['1fr', null, '3fr 2fr'],
