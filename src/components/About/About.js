@@ -17,7 +17,7 @@ const About = () => {
         p: {
           fontFamily: 'Inter',
           fontWeight: '400',
-          fontSize: '20px',
+          fontSize: ['16px', null, '20px'],
           lineHeight: '30px'
         }
       }}>
@@ -48,7 +48,7 @@ const About = () => {
             flex: ['1 0 100%', null, '1 0 calc(65% - 16px)'],
             display: 'flex',
             flexDirection: 'column',
-            px: ['32px', null, '0px'],
+            px: ['48px', null, '0px'],
             order: [1, null, 0],
             gap: '48px',
             alignItems: 'center',
@@ -60,17 +60,26 @@ const About = () => {
               display: 'flex',
               gap: '28px', bg: '#DEDBEE',
               alignItems: 'center',
-              width: '676px', padding: '44px 20px',
-              color: '#3E3667'
+              padding: '44px 20px',
+              color: '#3E3667',
+              width: '100%'
             }}>
-              <img src="/assets/icons/career.png" alt="" />
+              <img src="/assets/images/about2.png" alt="" />
               <div>
                 <h1>Mission</h1>
                 <p>Factly Labs strives on developing and managing various applications that will increase access to public data and information by making it easy, interactive and intuitive.</p>
               </div>
             </div>
-            <div sx={{ display: 'flex', color: '#3E3667', gap: '28px', bg: '#DEDBEE', alignItems: 'center', width: '676px', padding: '44px 20px' }}>
-              <img src="/assets/icons/career.png" alt="" />
+            <div sx={{
+              display: 'flex',
+              color: '#3E3667',
+              gap: '28px',
+              bg: '#DEDBEE',
+              alignItems: 'center',
+              padding: '44px 20px',
+              width: '100%'
+            }}>
+              <img src="/assets/images/about2.png" alt="" />
               <div>
                 <h1>Vision</h1>
                 <p>Factly Labs will strive to democratize journalism technology.</p>

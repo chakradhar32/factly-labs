@@ -22,7 +22,7 @@ const WhatWeDo = () => {
             color: '#3E3667',
             mb: '12px'
           }}>What We Do</h2>
-          <p sx={{ fontSize: '20px' }}>Factly’s written and visual stories layout facts with evidence and help separate the wheat from the chaff in times of hyper-connectivity and constant information bombardment. The content aims to simplify public data & information that might otherwise be in complex forms. The fact-checks debunk viral misinformation and lay bare facts on the claims made by influencers.</p>
+          <p sx={{ fontSize: ['16px', null, '20px'], }}>Factly’s written and visual stories layout facts with evidence and help separate the wheat from the chaff in times of hyper-connectivity and constant information bombardment. The content aims to simplify public data & information that might otherwise be in complex forms. The fact-checks debunk viral misinformation and lay bare facts on the claims made by influencers.</p>
         </div>
         <div>
           <div sx={{
