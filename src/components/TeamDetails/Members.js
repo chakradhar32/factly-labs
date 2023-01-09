@@ -2,61 +2,11 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { jsx } from 'theme-ui'
-import Card from './Card'
+import MemberCard from './MemberCard'
 
 
-const Members = () => {
+const Members = ({ members }) => {
 
-  const members = [
-    {
-      image: "/assets/images/bharath.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-    {
-      image: "/assets/images/chakri.png",
-      name: "Bharath Guniganti",
-      position: "Head-Operations",
-      link: "/"
-    },
-    {
-      image: "/assets/images/jyothi.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-    {
-      image: "/assets/images/abhishek.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-    {
-      image: "/assets/images/chakri.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-    {
-      image: "/assets/images/bharath.png",
-      name: "Bharath Guniganti",
-      position: "Head-Operations",
-      link: "/"
-    },
-    {
-      image: "/assets/images/abhishek.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-    {
-      image: "/assets/images/jyothi.png",
-      name: "Rakesh Dubbudu",
-      position: "Founder, Factly",
-      link: "/"
-    },
-  ]
   return (
     <section sx={{
       maxWidth: '1120px', mx: 'auto',
@@ -109,7 +59,7 @@ const Members = () => {
         gridGap: '56px 24px',
       }}>
         {members.map((member) => (
-          <Card data={{ ...member }} />
+          <MemberCard data={{ ...member }} />
         ))}
       </div>
     </section>

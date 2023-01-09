@@ -6,7 +6,7 @@ import linkedIn from '../../../static/assets/icons/linkedin.svg'
 
 
 const Card = ({ data }) => {
-  const { image, name, position, link } = data
+  const { image, name, position, slug } = data
   return (
     <div>
       <div sx={{ display: 'flex' }}>
@@ -32,7 +32,7 @@ const Card = ({ data }) => {
           </div>
           <div sx={{ border: '1px solid #C2C2C2' }}></div>
           <div sx={{ display: 'flex', justifyContent: 'space-between', mt: '16px' }}>
-            <Link to={link} sx={{ display: 'flex', textDecoration: 'underline', fontSize: '16px', color: '#6C6C6C', fontWeight: '500' }}>Read more</Link>
+            <Link to={slug} sx={{ display: 'flex', textDecoration: 'underline', fontSize: '16px', color: '#6C6C6C', fontWeight: '500' }}>Read more</Link>
             <img src={linkedIn} alt="" />
           </div>
         </div>
