@@ -7,12 +7,18 @@ import Form from '../components/Common/Form'
 import { graphql } from 'gatsby';
 import BlogCard from '../components/BlogPage/BlogCard';
 import Pager from '../components/Pager';
+import { Seo } from '../components/Seo';
+
 
 const BlogPage = ({ data, pageContext }) => {
   console.log({ data })
   const { posts } = data
   return (
     <Layout>
+      <Seo
+        title="Blog | Factly Labs"
+        description=""
+      />
       <IntroSection posts={posts.nodes.slice(0, 3)} />
       <div sx={{
         maxWidth: '1190px',

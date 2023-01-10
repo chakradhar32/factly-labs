@@ -12,11 +12,11 @@ const Navbar = () => {
   const menuItems = [
     {
       name: 'Our Work',
-      slug: '/work'
+      slug: '/featured'
     },
     {
       name: 'Company',
-      slug: '/team'
+      slug: '/teams'
     },
     {
       name: 'Impact',

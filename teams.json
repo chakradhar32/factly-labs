@@ -93,8 +93,13 @@
         ]
       }
     ],
-    "slug": "OrganiZation-team"
+    "slug": "organization-team"
   },
+
+
+
+
+
 
   {
     "image": "/assets/images/team-image.png",
@@ -193,6 +198,11 @@
     "slug": "newsroom-team"
   },
 
+
+
+
+
+
   {
     "image": "/assets/images/team-image.png",
     "name": "Fact-Check team",
@@ -289,6 +299,12 @@
     ],
     "slug": "factCheck-team"
   },
+
+
+
+
+
+
 
   {
     "image": "/assets/images/team-image.png",
@@ -387,6 +403,12 @@
     "slug": "research-team"
   },
 
+
+
+
+
+
+
   {
     "image": "/assets/images/team-image.png",
     "name": "Production team",
@@ -484,6 +506,11 @@
     "slug": "production-team"
   },
 
+
+
+
+
+  
   {
     "image": "/assets/images/team-image.png",
     "name": "Technology team",
@@ -578,6 +605,6 @@
         ]
       }
     ],
-    "slug": "newsroom-team"
+    "slug": "technology-team"
   }
 ]

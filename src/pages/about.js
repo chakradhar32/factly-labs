@@ -7,10 +7,16 @@ import About from '../components/About/About';
 import Form from '../components/Common/Form';
 import WhatWeDo from '../components/About/WhatWeDo';
 import Data from '../components/About/Data';
+import { Seo } from '../components/Seo';
+
 
 const AboutPage = () => {
   return (
     <Layout>
+      <Seo
+        title="About | Factly Labs"
+        description=""
+      />
       <Header title='About Us'
         description='Connect your tools, connect your teams. With over 100 apps already available in our directory, your team’s favourite tools are just a click away.'
       />
