@@ -165,7 +165,7 @@ const ContactForm = () => {
             </label>
             <label htmlFor="message">
               Message
-              <input id="message" type="text" name="message" />
+              <textarea name="message" id="message" rows="3"></textarea>
             </label>
             <button sx={{
               bg: '#3E3667',
