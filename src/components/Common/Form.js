@@ -51,7 +51,7 @@ const Form = () => {
           </div>
           <div sx={{ display: "flex", flexDirection: 'column' }}>
             <label sx={{ my: '10px' }} for="message">Message</label>
-            <input type="text" id="message" />
+            <textarea name="message" id="message" rows="3"></textarea>
           </div>
           <button sx={{
             bg: '#3E3667',

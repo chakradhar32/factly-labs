@@ -34,7 +34,7 @@ const Pager = ({ data }) => {
     }}>
 
       <div sx={{
-        display: ['none', null, 'flex'],
+        display: ['none', null, 'block'],
         width: '100%',
         ul: {
           listStyleType: 'none',
