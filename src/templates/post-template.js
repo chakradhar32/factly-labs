@@ -1,26 +1,55 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import Post from '../components/Post';
 import Layout from '../components/Layout';
 import { Seo } from '../components/Seo';
-
+import BlogCard from '../components/BlogPage/BlogCard';
+import Form from '../components/Common/Form';
 
 const PostPage = ({ data }) => {
-  const { posts, post } = data;
+  const { posts, post, recentPosts } = data;
+  console.log({ posts, post, recentPosts })
   const currentPost = posts.edges.filter(({ node }) => node.id === post.id)[0];
-  if (!currentPost) {
-    return (
-      <Layout>
-        <h3>Post not found</h3>
-      </Layout>
-    );
-  }
-  const { previous: previousPost, next: nextPost } = currentPost;
+  // if (!currentPost) {
+  //   return (
+  //     <Layout>
+  //       <h3>Post not found</h3>
+  //     </Layout>
+  //   );
+  // }
+  const { previous: previousPost, next: nextPost } = currentPost
   return (
     <Layout>
       <Seo title={post.title} description={""} />
       <Post data={post} previousPost={previousPost} nextPost={nextPost} />
-    </Layout>
+      <div sx={{
+        px: ['32px', null, '5rem'],
+        mb: '3rem',
+      }}>
+        <h5 sx={{
+          fontFamily: 'Montserrat',
+          fontWeight: 600,
+          fontSize: '36px',
+          lineHeight: '44px',
+          color: '#3E3667',
+          mb: '2rem'
+        }}>
+          Recent Posts
+        </h5>
+        <div
+          sx={{
+            display: 'flex',
+            gap: '1.5rem',
+            flexWrap: 'wrap',
+          }}
+        >
+          {recentPosts.nodes.map((post) => <BlogCard key={post.id} data={post} />)}
+        </div>
+      </div>
+      <Form />
+    </Layout >
   );
 };
 

@@ -60,7 +60,7 @@ const Products = () => {
   ]
   return (
     <section sx={{ p: '2rem' }}>
-      <div sx={{ maxWidth: '768px', mx: 'auto', mb: '80px', }}>
+      <div sx={{ maxWidth: '768px', mx: 'auto', mb: '80px', mt: ['0px', null, '80px'] }}>
         <h2 sx={{
           fontFamily: 'Montserrat',
           fontWeight: '600',

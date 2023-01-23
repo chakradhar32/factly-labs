@@ -148,7 +148,7 @@ const IntroSection = ({ posts }) => {
                     height: '100%',
                     objectFit: 'cover',
                   }}
-                  src={posts[2].medium.url.proxy}
+                  src={posts[2].medium?.url?.proxy}
                   srcSet={`
                           ${posts[0].medium.url.proxy}?rs:fill/w:100 100w,
                           ${posts[0].medium.url.proxy}?rs:fill/w:400 400w,

@@ -11,11 +11,10 @@ export const Head = () => (<>
 const Layout = ({ children }) => {
   return (
     <div>
-
       <Navbar />
       <main>
-
-        {children}</main>
+        {children}
+      </main>
       <Footer />
       <div id="modal"></div>
     </div>

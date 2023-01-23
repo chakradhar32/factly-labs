@@ -37,8 +37,8 @@ const Values = () => {
   return (
     <section sx={{
       maxWidth: '1126px', mx: 'auto',
-      mb: ['40px', null, null, '0px'],
-      mt: ['80px', null, null, '0px'],
+      mb: '40px',
+      mt: '80px',
       px: '24px'
     }}>
       <div sx={{

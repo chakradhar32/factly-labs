@@ -36,16 +36,16 @@ module.exports = {
         name: `Factly website`,
         short_name: `Factly`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#3E3667`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        theme_color: `#663399`,
+        theme_color: `#3E3667`,
         display: `minimal-ui`,
-        icon: `./static/assets/icons/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `./static/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `@fyrepenguin/gatsby-source-dega`,
+      resolve: `@factly/gatsby-source-dega`,
       options: {
         spaceId: process.env.SPACE_ID,
         accessToken: process.env.ACCESS_TOKEN,

@@ -71,8 +71,8 @@ const Form = () => {
       {/* mobile */}
 
       <div sx={{
-        maxWidth: '376px',
-        mx: 'auto',
+        //maxWidth: '376px',
+        px: '32px',
         my: '3rem',
         display: ['block', null, 'none',]
       }}>

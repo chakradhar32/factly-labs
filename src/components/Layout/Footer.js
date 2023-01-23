@@ -63,10 +63,10 @@ const Footer = () => {
             </div>
             <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <h6>Company</h6>
-              <a href="#">About</a>
-              <a href="#">Teams</a>
-              <a href="#">Careers</a>
-              <a href="#">Blog</a>
+              <a href="/about-us">About</a>
+              <a href="/teams">Teams</a>
+              <a href="/career">Careers</a>
+              <a href="/blog">Blog</a>
             </div>
           </div>
         </div>
@@ -144,8 +144,8 @@ const Footer = () => {
               '&:hover': { color: '#3E3667' }
             }
           }}>
-            <Link to='/work'>Our Work</Link>
-            <Link to='/team'>Company</Link>
+            <Link to='/featured'>Our Work</Link>
+            <Link to='/teams'>Company</Link>
             <Link to=''>Impact</Link>
             <Link to=''>Accolades</Link>
             <Link to='/blog'>Blog</Link>

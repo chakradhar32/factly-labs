@@ -7,6 +7,7 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'gatsby';
 import { jsx } from 'theme-ui';
+import isBrowser from '../../helpers/isBrowser';
 
 const Navbar = () => {
   const menuItems = [
@@ -31,7 +32,8 @@ const Navbar = () => {
       slug: '/blog'
     },
   ]
-
+  const pathname = isBrowser && window.location.pathname
+  const [menuType, setMenuType] = useState('white');
   const [mobile, setMobile] = useState(true);
   const [menuVisible, setMenuVisible] = useState(false);
   const [width, setWidth] = useState(0);
@@ -56,11 +58,18 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', updateWidth);
   }, [width]);
 
+  useEffect(() => {
+    if (pathname) {
+      const pathArray = pathname.split('/')
+      const path = pathArray[pathArray.length - 2]
+      setMenuType(['about', 'products', 'teams', 'career'].includes(path) ? 'dark' : 'white')
+    }
+  }, [pathname])
 
   return (
     <nav sx={{
-      bg: '#FFFFFF',
-      mt: ['2rem', null, '1rem']
+      bg: menuType === 'white' ? '#FFFFFF' : '#3E3667',
+      pt: '32px'
     }}>
       <div sx={{
         display: 'flex',
@@ -75,7 +84,7 @@ const Navbar = () => {
       }}>
         <div>
           <Link to="/">
-            <img src="/assets/icons/labs.png" alt="" />
+            <img src={menuType === 'white' ? '/assets/icons/labs.png' : '/assets/icons/labs2.png'} alt="" />
           </Link>
         </div>
         <div
@@ -85,7 +94,7 @@ const Navbar = () => {
             alignItems: 'center',
             zIndex: '1000',
             a: {
-              color: '#1E1E1E',
+              color: menuType === 'white' ? '#1E1E1E' : '#FFFFFF',
               variant: 'text.xs',
               fontWeight: '500',
               padding: '0.75rem 0.5rem',
@@ -246,8 +255,8 @@ const Navbar = () => {
           display: ['none', null, 'block']
         }}>
           <Link to="/contact-us" sx={{
-            bg: '#3E3667',
-            color: '#E6E3D9',
+            bg: menuType === 'white' ? '#3E3667' : '#FFFFFF',
+            color: menuType === 'white' ? '#FFFFFF' : '#3E3667',
             border: 'none',
             borderRadius: '4px',
             p: '10px 20px'
