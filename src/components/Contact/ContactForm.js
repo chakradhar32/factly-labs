@@ -5,7 +5,7 @@ import Facebook from '../../../static/assets/icons/facebook.svg'
 import Instagram from '../../../static/assets/icons/instagram.svg'
 import Email from '../../../static/assets/icons/Email.svg'
 import Location from '../../../static/assets/icons/Location.svg'
-import Linkedin from '../../../static/assets/icons/linkedin.svg'
+import Linkedin from '../../../static/assets/icons/linkedinn.svg'
 import Twitter from '../../../static/assets/icons/twitter.svg'
 
 
@@ -29,7 +29,7 @@ const ContactForm = () => {
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
-          gap: '28px',
+          gap: '24px',
           maxWidth: ['1 0 100%', null, 'calc(50% - 52px)'],
           flex: ['1 0 100%', null, 'calc(50% - 52px)'],
           flexWrap: 'wrap',
@@ -42,13 +42,14 @@ const ContactForm = () => {
           }
         }}
       >
-        <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <div sx={{ display: 'flex', flexDirection: 'column', gap: '12px', }}>
           <h2 sx={{
             fontFamily: 'Montserrat',
             fontWeight: '600',
             fontSize: '32px',
             lineHeight: '44px',
-            color: '#3E3667'
+            color: '#3E3667',
+
           }}>
             Get in Touch
           </h2>
@@ -72,11 +73,9 @@ const ContactForm = () => {
         <div sx={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
           <img src={Location} alt="" />
           <div sx={{ display: 'flex', flexDirection: 'column' }}>
-            <h4>Lorem Ipsum, Dolor Ultra
-              Hyderabad</h4>
+            <h4>Lorem Ipsum, Dolor Ultra <br />Hyderabad</h4>
           </div>
         </div>
-
         <div
           sx={{
             display: 'flex',
@@ -84,8 +83,8 @@ const ContactForm = () => {
             alignItems: 'center',
             justifyContent: 'flex-start',
             fontSize: '36px',
-            gap: '2rem',
-            py: '1rem',
+            gap: ['0.75rem', null, '2rem'],
+            pt: '3rem',
             a: {
               color: '#000',
               '&:hover': { color: '#fff' },

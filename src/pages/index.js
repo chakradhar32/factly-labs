@@ -4,7 +4,7 @@ import Products from '../components/Homepage/Products'
 import Values from '../components/Homepage/Values'
 import Layout from '../components/Layout'
 import { Seo } from '../components/Seo'
-
+import Form from '../components/Common/Form'
 
 const Homepage = () => {
   return (
@@ -16,6 +16,7 @@ const Homepage = () => {
       <Header />
       <Values />
       <Products />
+      <Form />
     </Layout>
   )
 }

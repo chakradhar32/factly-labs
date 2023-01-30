@@ -8,7 +8,7 @@ const Form = () => {
       <div sx={{
         display: ['none', null, 'flex'],
         maxWidth: '590px',
-        my: '80px',
+        mb: '80px',
         mx: 'auto',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -73,7 +73,8 @@ const Form = () => {
       <div sx={{
         //maxWidth: '376px',
         px: '32px',
-        my: '3rem',
+        mt: ['none', null, '3rem'],
+        mb: '3rem',
         display: ['block', null, 'none',]
       }}>
         <div>
@@ -86,7 +87,8 @@ const Form = () => {
             Get In Touch
           </h1>
           <p sx={{
-            color: '#3E3667', fontFamily: 'Inter',
+            color: '#1E1E1E',
+            fontFamily: 'Inter',
             fontWeight: '400',
             fontSize: '20px',
             lineHeight: '30px',
