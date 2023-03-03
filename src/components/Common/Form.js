@@ -39,19 +39,19 @@ const Form = () => {
             borderRadius: '0.5rem',
           },
         }}>
-          <div sx={{ display: "flex", gap: '24px' }}>
+          <div sx={{ display: "flex", gap: '32px' }}>
             <div sx={{ display: "flex", flexDirection: 'column', gap: '10px' }}>
               <label for="name">Name</label>
-              <input type="password" id="name" />
+              <textarea name="message" id="message" rows="1" cols="26"></textarea>
             </div>
             <div sx={{ display: "flex", flexDirection: 'column', gap: '10px' }}>
               <label for="email">Email</label>
-              <input type="email" id="email" />
+              <textarea name="message" id="message" rows="1" cols="26"></textarea>
             </div>
           </div>
           <div sx={{ display: "flex", flexDirection: 'column' }}>
             <label sx={{ my: '10px' }} for="message">Message</label>
-            <textarea name="message" id="message" rows="3"></textarea>
+            <textarea name="message" id="message" rows="3" cols="50"></textarea>
           </div>
           <button sx={{
             bg: '#3E3667',
