@@ -12,13 +12,13 @@ const PostPage = ({ data }) => {
   const { posts, post, recentPosts } = data;
   console.log({ posts, post, recentPosts })
   const currentPost = posts.edges.filter(({ node }) => node.id === post.id)[0];
-  // if (!currentPost) {
-  //   return (
-  //     <Layout>
-  //       <h3>Post not found</h3>
-  //     </Layout>
-  //   );
-  // }
+  if (!currentPost) {
+    return (
+      <Layout>
+        <h3>Post not found</h3>
+      </Layout>
+    );
+  }
   const { previous: previousPost, next: nextPost } = currentPost
   return (
     <Layout>
@@ -59,7 +59,6 @@ export const query = graphql`
   query ($slug: String!) {
     posts: allDegaPost (sort: { fields: created_at, order: DESC }
     filter: { format: { slug: { eq: "article" } } }
-    limit: 24
   ) {
       edges {
         node {
